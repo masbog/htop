@@ -48,6 +48,9 @@ For compiling sources downloaded from the Git repository, run:
 
     ./autogen.sh && ./configure && make
 
+configure for iOS arm64:
+    ./configure --build=x86_64-apple-darwin --host=aarch64-apple-darwin13
+
 By default `make install` will install into `/usr/local`, for changing
 the path use `./configure --prefix=/some/path`.
 
